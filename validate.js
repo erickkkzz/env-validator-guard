@@ -1,0 +1,1 @@
+function validateEnv(keys) { keys.forEach(k => { if(!process.env[k]) throw new Error(k + ' missing'); }); } module.exports = { validateEnv };
